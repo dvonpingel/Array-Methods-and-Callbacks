@@ -6,6 +6,11 @@ import { fifaData } from './fifa.js';
 Practice accessing data by console.log-ing the following pieces of data note, you may want to filter the data first 😉*/
 
 //(a) Home Team name for 2014 world cup final
+function homeTeamName(fifa) {
+    return fifa.Year === 2014 && fifa.Stage === "Final";
+};
+let homeTeam = fifaData.filter(homeTeamName);
+console.log(homeTeam[0]['Home Team Name']);
 
 //(b) Away Team name for 2014 world cup final
 
